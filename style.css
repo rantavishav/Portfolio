@@ -1,0 +1,329 @@
+
+*{
+    margin:0px;             /* To remove extra margin of page */
+    box-sizing:border-box;
+}
+
+body{
+    display: flex;         /* To make whole body responsive  */ 
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.header{
+    min-height: 100vh;      /* min-height of header element*/
+    width: 100vw;           /* width of header element*/
+    display:flex;
+    flex-wrap: wrap;
+
+}
+
+/* block1 is the left side block in the header */
+
+.header .block1{
+    
+    /* alignment of .block1 class*/
+    text-align: center;
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 5;
+    flex-wrap: wrap;
+}
+
+.header .block1 h1{
+    /* alignment of h1 whose parent is block1 class*/
+    text-align: left;
+    align-self: flex-start;
+    
+    /* Font styling */
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 84px;
+
+    color: #2A3D66;
+}
+
+.header .block1 h3{
+    /* alignment of h3 whose parent is block1 class*/
+    align-self: flex-start;
+    
+    /* Font Styling */
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 37px;
+    
+    color: #2A3D66; 
+}
+
+.header .block1 button{
+    /* alignment of button whose parent is block1 class*/
+    align-self: flex-start;
+    padding: 5px 50px;
+    border: 2px solid black ;
+    margin-top: 35px;
+
+    /* Font Styling */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+  
+    background: white;
+
+
+}
+/* block2 is Right hand side block inside header */
+.header .block2{
+   
+    margin-right: 20%; 
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+/* Article1 styling */
+
+.article1{
+    
+    min-height: 100vh;
+    width:100vw;
+    
+    background: linear-gradient(to bottom,rgb(42, 61, 102), rgb(102, 42, 102) );
+
+    display: flex;
+    
+}
+
+.article1 .block1{
+     /*Alignment of block1 class whose parent is article1  */
+    align-self: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    /* Font Styling */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 42px;
+
+    color: #F8F8F8;
+
+}
+
+.article1 .block2{
+    /*Alignment of block2 class whose parent is article1  */
+    flex-basis: 100vw;
+    align-self: center;
+    flex-shrink: 2; /*Shrinks when get to a certain value*/
+    
+    /*Font Styling  */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 20vw;
+    color: #F8F8F8;
+
+}
+
+
+/* Skills Section Styling*/
+/* article2 is main class in this section */
+.article2{
+    
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to bottom,#bdc3c7 , #2c3e50 );;;
+}
+
+.article2 h1{
+    /* Alignment of h1 tag whose parent is article2 */
+    text-align: center;
+    margin-top:10vh;
+
+    /* Font Styling */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 56px;
+
+    color: #030303;
+}
+
+.my-skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling Header of this Article Section */
+.my-skills h1{
+    align-self:  flex-start;
+    align-self:  center;
+}
+
+/* skill name styling */
+.my-skills .skills-name p{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #080808;
+    
+    text-align: left;
+     
+    margin: 30px;
+    padding-bottom: 10px;
+
+  }
+
+  /* Describing Size of bars */
+.container {
+    width: 70vw; 
+    background:inherit;
+    margin-right: 20vw; 
+  }
+
+  /* Styling The bars */
+.skills {
+    text-align: right; /* Right-align text */
+    font-style: bold;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 10px; /* Add top padding */
+    margin: 30px;
+    padding-bottom: 10px; /* Add bottom padding */
+    color: black; /*color of text*/
+  }
+  /* Making the bars */
+  .html {width: 90%; background:linear-gradient(to right,#ffafbd , #ffc3a0 ); }
+  .css {width: 80%; background: linear-gradient(to right,#ffafbd , #ffc3a0);;} 
+  .js {width: 65%; background: linear-gradient(to right,#ffafbd , #ffc3a0);;  } 
+  .python {width: 60%; background: linear-gradient(to right,#ffafbd , #ffc3a0 );; } 
+
+
+  /* Projects Section */
+/* Article3 is main class of Project Section */
+.article3{
+    min-height: 100vh;
+    width: 100vw;
+
+}
+
+.article3 h1{
+    /* Alignement of head tag in Projects */
+    text-align: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    
+    /* Fornt Styling */
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+
+    color: #2A3D66;
+
+}
+
+/* Creating Grid to display various project */
+.project{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(auto-fill, auto);
+    gap: 10vh 0vw;      /*Gap between rows and columns respectively*/
+}
+
+/* Alignling Different Project images */
+.article3 .project .project-container img{
+    width: 30vw;
+    height: 30vh;
+    margin-top: 25vh;
+}
+
+/* Removing Underliner from the links */
+.article3 .project .project-container a{
+    text-decoration: none;
+}
+
+/* Project Names Styling */
+.article3 .project .project-container h4{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;  
+    line-height: 42px;  
+    
+    color: #2A3D66;
+    margin-top: 5vh;
+}
+
+/* First and Third Project Alignement */
+.article3 .project div[class="project-container 1"], .article3 .project div[class="project-container 3"]{
+    margin-left: 10vw;
+    margin-right: 5vw;
+    padding-right: 5vw;
+}
+
+/* Styling Projects description */
+.article3 .project .project-container p{
+    text-align: left;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #4F4F4F;
+    margin-top: 2vh;
+}
+
+/* Footer Section */
+.footer {
+    text-align: center;
+    padding: 10vh 0 20vh 0;
+    background: linear-gradient(135deg,#e8491d,#e88a6f);
+    color:white;
+    margin-top: 10vh;
+
+}
+
+.footer h1{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-weight: 700;
+}
+
+.footer  h3{
+    
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10vh;
+}
+
+.footer p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    
+    padding-top: 5vh;
+}
